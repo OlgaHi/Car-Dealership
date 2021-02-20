@@ -1,5 +1,5 @@
-
-
+namespace Dealership.Models
+{
   public class Car
   {
     public string MakeModel;
@@ -18,3 +18,4 @@
       return (Price <= maxPrice);
     }
   }
+}

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-
+namespace Dealership.Models
+{
   public class Program
   {
     public static void Main()
@@ -33,3 +34,4 @@ using System.Collections.Generic;
       }
     }
   }
+}
