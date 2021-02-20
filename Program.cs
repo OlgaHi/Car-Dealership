@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using Dealership.Models;
 
-namespace Dealership.Models
+namespace Dealership
 {
   public class Program
   {
@@ -30,7 +31,10 @@ namespace Dealership.Models
 
       foreach(Car automobile in CarsMatchingSearch)
       {
+        Console.WriteLine("----------------------");
         Console.WriteLine(automobile.GetMakeModel());
+        Console.WriteLine(automobile.GetMiles() + " miles");
+        Console.WriteLine("$" + automobile.GetPrice());
       }
     }
   }
