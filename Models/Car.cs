@@ -1,5 +1,5 @@
-namespace Models
-{
+
+
   public class Car
   {
     public string MakeModel;
@@ -18,4 +18,3 @@ namespace Models
       return (Price <= maxPrice);
     }
   }
-}
