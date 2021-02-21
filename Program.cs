@@ -14,8 +14,8 @@ namespace Dealership
       Car amc = new Car("1976 AMC Pacer", 400, 198000);
 
       List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
-      
-      yugo.SetPrice(300);
+
+      yugo.Price = 500;
 
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
@@ -34,9 +34,9 @@ namespace Dealership
       foreach(Car automobile in CarsMatchingSearch)
       {
         Console.WriteLine("----------------------");
-        Console.WriteLine(automobile.GetMakeModel());
-        Console.WriteLine(automobile.GetMiles() + " miles");
-        Console.WriteLine("$" + automobile.GetPrice());
+        Console.WriteLine(automobile.MakeModel);
+        Console.WriteLine(automobile.Miles + " miles");
+        Console.WriteLine("$" + automobile.Price);
       }
     }
   }
